@@ -154,3 +154,6 @@ Route::resource('/admin/pengumuman', AdminAnnouncementController::class);
 
 Route::get('/admin/apbdes', [AdminAnggaranController::class, 'slug']);
 Route::resource('/admin/apbdes', AdminAnggaranController::class);
+
+Route::get('/bumn', [UmkmController::class, 'index']);
+Route::get('/bumn/{bumn:slug}', [UmkmController::class, 'detail']);

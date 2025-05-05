@@ -4,7 +4,7 @@
 <section class="counts section-bg">
     <div class="container">
         <div class="section-title">
-            <h2>UMKM Desa</h2>
+            <h2>BUMDES</h2>
         </div>
         <div class="row">
             @foreach ($umkms as $umkm)
