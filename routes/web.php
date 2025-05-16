@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UmkmController;
+use App\Http\Controllers\BumdesController;
 use App\Http\Controllers\BeritaController;
 use App\Http\Controllers\KontakController;
 use App\Http\Controllers\BerandaController;
@@ -77,6 +78,9 @@ Route::get('/peta-desa', [PetaDesaController::class, 'index']);
 
 Route::get('/umkm', [UmkmController::class, 'index']);
 Route::get('/umkm/{umkm:slug}', [UmkmController::class, 'detail']);
+
+Route::get('/bumdes', [UmkmController::class, 'index']);
+Route::get('/bumdes/{umkm:slug}', [UmkmController::class, 'detail']);
 
 Route::get('/kontak', [KontakController::class, 'index']);
 
